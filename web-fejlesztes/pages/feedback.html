@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="alternate stylesheet" type="text/css" href="../css/nagybetus.css" title="nagybetus">
+  <link rel="stylesheet" href="../css/hamburger.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/printer.css" media="print">
+  <script src="../scripts/styleswitcher.js"></script>
+  <script src="../scripts/hamburger.js"></script>
+  <title>Visszajelzés</title>
+</head>
+
+<body>
+  <header>
+    <!--NAV Hamburger-->
+    <div class="topnav">
+      <a href="../index.html" class="active">Kezdőlap</a>
+      <!-- Navigation links (hidden by default) -->
+      <div id="myLinks">
+        <a href="../index.html">Spagetti</a>
+        <a href="kfc.html">Egézséges KFC csirke</a>
+      </div>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <!--NAV Gyengénlátó-->
+    <nav id="gyengenlato"><a id="nagybetu" href="#" onclick="setActiveStyleSheet('nagybetus'); return false;"><span
+          class="ikon"></span>Nagybetűs változat</a>
+      <a id="normalbetu" href="#" onclick="setActiveStyleSheet('normal'); return false;"><span
+          class="ikon"></span>Normál változat</a>
+    </nav>
+    <!--NAV alap-->
+    <nav class="basenav">
+      <ul>
+        <li><a href="../index.html" accesskey="1">Kezdőlap</a></li>
+        <li><a href="spagetti.html" accesskey="2">Spagetti</a></li>
+        <li><a href="kfc.html" accesskey="3">Egézséges KFC csirke </a></li>
+        <li>>Oszd meg a véleményed</li>
+      </ul>
+    </nav>
+
+  </header>
+  <main>
+    <h1>Visszajelzés</h1>
+
+    <p style="text-align: center;">Szeretnéd megosztani a véleményed, esetleg kérdésed van? Ird meg nekünk!</p>
+    <div class="wrapper">
+      <div id="formula">
+        <form action="mailto:nemethdominik02@gmail.com" method="post" enctype="text/plain">
+          <fieldset>
+            <legend>Személyes adatok</legend>
+            <label for="name"><strong>Teljes név</strong></label><br>
+            <input type="text" name="teljesnev" id="name" size="40" maxlength="50"><br>
+            <label for="email"><strong>E-mail cím</strong></label><br>
+            <input type="text" name="emailcim" id="email" size="40" maxlength="50"><br>
+          </fieldset>
+          <fieldset>
+            <legend>Melyik étel ízlett jobban?</legend>
+            <input type="radio" name="etel" id="v1" value="spagetti">
+            <label for="v1">Spagetti</label><br>
+            <input type="radio" name="etel" id="v2" value="kfc">
+            <label for="v2">Egézséges KFC csirke</label>
+          </fieldset>
+          <fieldset>
+            <label for="uzenet"><strong>Üzenet</strong></label><br>
+            <textarea name="uzenet" id="uzenet" cols="40" rows="5" placeholder="Írd meg a véleményed!"></textarea><br>
+            <label for="robot">Nem vagyok robot:</label>
+            <input type="checkbox" name="robot" id="robot" value="igen">
+          </fieldset>
+          <fieldset>
+            <legend>Adatok elküldése</legend>
+            <input type="reset" value="Visszaállítás">
+            <input type="submit" value="Küldés">
+          </fieldset>
+        </form>
+      </div>
+      <a href="../pic/Bolognese-Sauce-700x1004.jpg"><img class="elokep" src="../pic/Bolognese-Sauce-700x1004.jpg"
+        alt="Egy tál bolognai"></a>
+
+      <a href="../pic/cornflakes_chicken2.jpeg"><img class="elokep" src="../pic/cornflakes_chicken2.jpeg"
+          alt="csirke falatok">
+      </a>
+    </div>
+    <div class="receptlink"> <a href="https://chat.openai.com/"><u>A tartalom forrása</u></a>
+    </div>
+  </main>
+  <footer>
+    <cite>Németh Dominik Kristóf</cite> - 2023
+  </footer>
+</body>
+
+</html>

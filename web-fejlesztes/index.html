@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" title="normal" rel="stylesheet" href="css/style.css">
+    <link rel="alternate stylesheet" type="text/css" href="css/nagybetus.css" title="nagybetus">
+    <link rel="stylesheet" href="./css/hamburger.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/printer.css" media="print">
+    <script src="scripts/styleswitcher.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <title>Receptek</title>
+</head>
+
+<body class="body_background">
+    <header>
+        <!--NAV Hamburger-->
+        <div class="topnav">
+            <a href="index.html" class="active">Kezdőlap</a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+              <a href="pages/spagetti.html">Spagetti</a>
+              <a href="pages/kfc.html">Egézséges KFC csirke</a>
+              <a href="pages/feedback.html">Oszd meg a véleményed</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+        <!--NAV Gyengénlátó-->
+        <nav id="gyengenlato"><a id="nagybetu" href="#" onclick="setActiveStyleSheet('nagybetus'); return false;"><span
+                    class="ikon"></span>Nagybetűs változat</a>
+            <a id="normalbetu" href="#" onclick="setActiveStyleSheet('normal'); return false;"><span
+                    class="ikon"></span>Normál változat</a>
+        </nav>
+        <!--NAV alap-->
+        <nav class="basenav">
+            <ul>
+                <li>>Kezdőlap</li>
+                <li><a href="pages/spagetti.html" accesskey="2">Spagetti</a></li>
+                <li><a href="pages/kfc.html" accesskey="3">Egézséges KFC csirke </a></li>
+                <li><a href="pages/feedback.html" accesskey="4">Oszd meg a véleményed</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="fooldal_szovege">Receptek</h1>
+        <div style="text-align: center;">
+            <video controls poster="./pic/vposter.jpg" class="kep">
+                <source src="vid/homepage_video.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="felirat">
+            <a target="_blank" href="./pages/gyengenlatok.html">Ezen az oldalon érhető el a videó feliratozása!</a>
+        </div>
+        
+        <div class="fooldal_szovege">
+            <p>Örömmel köszöntjük Önt a recept oldalunkon, ahol számtalan ínycsiklandó ételrecept közül válogathat.
+                Az itt található receptek <b>változatosak és könnyen elkészíthetőek</b>, így akár kezdő szakácsok is
+                könnyedén megcsinálják őket.</p>
+            <p>Böngésszen bátran az oldalunkon, válogasson kedvére az ételek közül, és tegye próbára a főzőtudását!
+                Reméljük, hogy az itt talált receptekkel sikerül inspirálnunk Önt és a konyhai kalandjai során minden
+                alkalommal sikerélményben lesz része.</p>
+        </div>
+        <hr>
+        <figure>
+            <img class="kep" src="pic/Basic-Cooking-Methods.jpg" alt="Zöldség pirítás egy serpenyőben"
+                title="Zöldség pirítás egy serpenyőben">
+            <figcaption class="fooldal_szovege">Zöldség pirítás egy serpenyőben</figcaption>
+        </figure>
+
+        <aside>
+            <table>
+                <caption><strong>Spagetti és KFC-s csirke kalóriatáblázata</strong>
+                    <details class="table_movement">
+                        <summary>Súgó</summary>
+                        <p>A táblázatban ételekre vonatkozó adatok olvashatóak. 5 oszlop (Étel, Kalória, Szénhidrát,
+                            Fehérje, Zsír) van, a sorokban az egyes ételnevek szerepelnek. </p>
+                    </details>
+                </caption>
+                <tr>
+                    <th scope="col">Étel</th>
+                    <th scope="col">Kalória (kcal)</th>
+                    <th scope="col">Szénhidrát (g)</th>
+                    <th scope="col">Fehérje (g)</th>
+                    <th scope="col">Zsír (g)</th>
+                </tr>
+                <tr>
+                    <td>Bolognai Spagetti (1 adag)</td>
+                    <td>632</td>
+                    <td>116</td>
+                    <td>23.2</td>
+                    <td>3.6</td>
+                </tr>
+                <tr>
+                    <td>Egészséges KFC csirke (1 adag)</td>
+                    <td>500</td>
+                    <td>20</td>
+                    <td>30</td>
+                    <td>20</td>
+                </tr>
+            </table>
+        </aside>
+        <div class="fooldal_szovege">
+            <p>Bízunk benne, hogy az oldalunkon található receptekkel sikerül inspirálnunk az embereket arra, hogy
+                főzzenek otthon, és élvezzék az ételkészítés örömét. Reméljük, hogy az oldalunkkal hozzájárulunk
+                ahhoz, hogy az emberek <b>egészségesebben és változatosabban</b> étkezzenek, és hogy mindenki
+                sikerélményt tapasztaljon a főzés során.</p>
+            <p>Köszönjük, hogy velünk tartanak az ételek világába!</p>
+        </div>
+    </main>
+    <div id="velemeny_link"><em><a href="pages/feedback.html" accesskey="k"> <span
+                    style="text-decoration: underline;">K</span>érdés,
+                visszajelzés</a></em></div>
+    <footer>
+        <cite>Németh Dominik Kristóf</cite> - 2023
+    </footer>
+</body>
+
+</html>

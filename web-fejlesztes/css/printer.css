@@ -1,0 +1,31 @@
+@import url("style.css");
+nav{
+    display: none;
+}
+.topnav{
+    display: none;
+}
+video{
+    display: none;
+}
+.felirat{
+    display: none;
+}
+body{
+    color: black;
+}
+details{
+    display: none;
+}
+#velemeny_link{
+    display: none;
+}
+.kep{
+    width: 40%;
+}
+.elokep{
+    width: 40%;
+}
+.receptlink{
+    display: none;
+}

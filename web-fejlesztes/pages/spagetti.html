@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="alternate stylesheet" type="text/css" href="../css/nagybetus.css" title="nagybetus">
+    <link rel="stylesheet" href="../css/hamburger.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/printer.css" media="print">
+    <script src="../scripts/styleswitcher.js"></script>
+    <script src="../scripts/hamburger.js"></script>
+
+    <title>Bolognai Spagetti</title>
+</head>
+
+<body>
+    <header>
+        <!--NAV Hamburger-->
+        <div class="topnav">
+            <a href="../index.html" class="active">Kezdőlap</a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+                <a href="kfc.html">Egézséges KFC csirke</a>
+                <a href="feedback.html">Oszd meg a véleményed</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <!--NAV Gyengénlátó-->
+        <nav id="gyengenlato"><a id="nagybetu" href="#" onclick="setActiveStyleSheet('nagybetus'); return false;"><span
+                    class="ikon"></span>Nagybetűs változat</a>
+            <a id="normalbetu" href="#" onclick="setActiveStyleSheet('normal'); return false;"><span
+                    class="ikon"></span>Normál változat</a>
+        </nav>
+        <!--NAV alap-->
+        <nav class="basenav">
+            <ul>
+                <li><a href="../index.html" accesskey="1">Kezdőlap</a></li>
+                <li>>Spagetti</li>
+                <li><a href="kfc.html" accesskey="3">Egézséges KFC csirke </a></li>
+                <li><a href="feedback.html" accesskey="4">Oszd meg a véleményed</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Bolognai Spagetti</h1>
+        <section>
+            <div class="swipe">
+                <figure style="text-align: center;">
+                    <img class="kep" src="../pic/Spaghetti_Bolognese.jpg" alt="Egy tál bolognai spagetti"
+                        title="Egy tál bolognai spagetti">
+                    <figcaption>Egy tál bolognai spagetti</figcaption>
+                </figure>
+                <article>
+                    <div class="hozzavalok">
+                        <h2>Hozzávalók</h2>
+                        <ul>
+                            <li> marhahús 400g </li>
+                            <li> olívaolaj 2 evőkanál
+                            </li>
+                            <li> közepes hagyma, apróra vágva 1db
+                            </li>
+                            <li> fokhagyma, apróra vágva 2 gerezd
+                            </li>
+                            <li> közepes sárgarépa, lereszelve 1db
+                            </li>
+                            <li> zeller, apróra vágva 1 szár
+                            </li>
+                            <li> sűrített paradicsom 400g
+                            </li>
+                            <li> szárított oregánó 1 teáskanál
+                            </li>
+                            <li> szárított bazsalikom 1 teáskanál
+                            </li>
+                            <li> só és frissen őrölt fekete bors ízlés szerint
+                            </li>
+                            <li> spagetti tészta 400g
+                            </li>
+                            <li> frissen reszelt parmezán sajt a tálaláshoz ízlés szerint
+                            </li>
+                        </ul>
+                    </div>
+
+                </article>
+            </div>
+            <hr>
+
+            <article>
+                <h2>Elkészítés:</h2>
+                <p>Egy nagy serpenyőben hevítsük fel az olívaolajat közepes lángon. Adjuk hozzá a hagymát és a
+                    fokhagymát, majd pirítsuk őket 2-3 percig, amíg aranybarnák lesznek.</p>
+                <p>Adjuk hozzá a marhahúst és pirítsuk 5-7 percig, amíg teljesen átsül.
+                </p>
+                <p> Adjuk hozzá a reszelt sárgarépát és apróra vágott zellert, majd folytassuk a sütést további 5
+                    percig.
+                </p>
+                <p>Öntsük hozzá a sűrített paradicsomot, majd adjuk hozzá az oregánót, a bazsalikomot, a sót és a
+                    frissen
+                    őrölt
+                    fekete borsot. Keverjük össze, majd főzzük közepes lángon 15-20 percig, amíg a szósz kissé
+                    besűrűsödik.
+                </p>
+                <p>Közben főzzük meg a spagetti tésztát sós vízben, amíg al dente lesz. Tegyük félre.
+                </p>
+                <p>Ha a bolognai szósz készen van, szedjük a tányérokra a spagetti tésztát, majd öntsük rá a szószt.
+                </p>
+                <p>Szórjuk meg frissen reszelt parmezán sajttal.
+                </p>
+                <p><i>Jó étvágyat kívánok!</i>
+                </p>
+
+            </article>
+            <div class="receptlink">
+                <a href="https://www.mindmegette.hu/az-en-bolognai-spagettim.recept/"><u>Ezt a receptet is érdemes lehet
+                    kipróbálni!</u></a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <cite>Németh Dominik Kristóf</cite> - 2023
+    </footer>
+</body>
+
+</html>
