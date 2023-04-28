@@ -1,18 +1,46 @@
 @import url("style.css");
 html{
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 video.kep{
     width: 22rem;
 }
 main p, .felirat{
     text-align: left;
-    font-size: 30px;
+    font-size: 1.875rem;
 }
 body h1{
-    font-size: 5rem;
+    font-size: 4rem;
 }
 img.kep{
     width: 20rem;
     margin-left: -2rem;
+}
+.hozzavalok{
+    font-size: 1.875rem;
+}
+@media screen and (min-width: 1200px) {
+    
+    body h1{
+        font-size: 6rem;
+    }
+
+    html{
+        font-size: 1.375rem;
+    }
+
+    video.kep{
+        width: 40rem;
+    }
+
+    img.kep{
+        width: 40rem;
+    }
+
+    .hozzavalok{
+        font-size: 2rem;
+    }
+    article p{
+        font-size: 2rem;
+    }
 }

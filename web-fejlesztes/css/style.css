@@ -17,6 +17,26 @@ main {
   flex-direction: column;
 }
 
+.skip {
+  position: fixed;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip:focus {
+  position: fixed;
+  width: auto;
+  height: auto;
+  left: 10px;
+  top: 25px;
+  background-color: burlywood;
+  color: blue;
+
+}
+
 figure {
   margin: 0 auto;
   display: flex;
